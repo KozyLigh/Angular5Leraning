@@ -18,12 +18,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RecipeService} from './recipes/recipe.service';
 import {HttpModule} from '@angular/http';
 import {DataStorageService} from './shared/data-storage.service';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
 
 
 @NgModule({
   declarations: [
     AppComponent, HeaderComponent, RecipesComponent, RecipeListComponent, RecipeDetailComponent, RecipeItemComponent, ShoppingListComponent, ShoppingEditComponent
-      ,DropdownDirective, RecipeStartComponent, RecipeEditComponent
+      ,DropdownDirective, RecipeStartComponent, RecipeEditComponent, SignupComponent, SigninComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpModule
