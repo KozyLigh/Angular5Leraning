@@ -18,6 +18,11 @@ export class RecipeService {
 
     constructor(private slService: ShoppingListService){}
 
+    setRecipes(recipes: Recipe[]){
+        this.recipes = recipes;
+        this.recipesChanged.next(this.recipes.slice());
+    }
+
     getRecipes() {
         // slice so we get a copy and not a direct instance of object / aray
         return this.recipes.slice();
