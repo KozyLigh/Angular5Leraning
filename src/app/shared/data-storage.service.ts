@@ -35,8 +35,7 @@ export class DataStorageService {
                     }
                     return recipes;
                 }
-            )
-            .subscribe(
+            ).subscribe(
                 (recipes: Recipe[]) => {
 
                     this.recipeService.setRecipes(recipes);
